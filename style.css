@@ -1,0 +1,83 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+.diagonal-box {
+  min-height: 500px;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+  background: #06b6d4;
+}
+
+header > img, header > div {
+  box-shadow: 0 0 3px #00000080;
+}
+
+header > img {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: auto;
+  max-height: 425px;
+  z-index: 2;
+}
+
+.name {
+  position: absolute;
+  top: 44%;
+  left: 0;
+  z-index: 3;
+}
+
+.about-me {
+  max-width: 400px;
+  min-height: 300px;
+  position: absolute;
+  top: 10%;
+  left: 27%;
+  z-index: 1;
+  background: #FFF;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: "Playfair Display";
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.about-me > div {
+  align-self: flex-end;
+  display: flex;
+  gap: 16px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  header > img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .name {
+    top: 44%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-me {
+    position: static;
+    box-shadow: none;
+    margin: 0 auto;
+  }
+
+  .about-me > div, .about-me > h1 {
+    align-self: center;
+  }
+}
