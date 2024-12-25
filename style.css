@@ -60,15 +60,72 @@ p {
   font-size: 1.5rem;
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-  padding: 0 24px;
+main {
+  padding: 96px;
 }
 
-.projects > div {
-  border: 2px solid black;
+main > h1 {
+  padding-bottom: 16px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 42px;
+}
+
+.card {
+  box-shadow: 0 0 3px #00000080;
+}
+
+.card > h1 {
+  text-align: center;
+  padding: 48px;
+  color: #FFF;
+}
+
+.one {
+  background: darkred;
+}
+
+.two {
+  background: darkorchid;
+}
+
+.three {
+  background: darkgreen;
+}
+
+.four {
+  background: violet;
+}
+
+.five {
+  background: goldenrod;
+}
+
+.six {
+  background: lightskyblue;
+}
+
+.inner-div {
+  padding: 0 24px 64px;
+}
+
+.inner-div > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.inner-div > div > p {
+  font-family: "Playfair Display";
+}
+
+.project-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 1.15rem;
 }
 
 @media (max-width: 600px) {
