@@ -25,9 +25,10 @@ header > img {
 
 .name {
   position: absolute;
-  top: 44%;
-  left: 0;
+  top: 375px;
+  left: 175px;
   z-index: 3;
+  font-size: 3rem;
 }
 
 .about-me {
@@ -59,6 +60,17 @@ p {
   font-size: 1.5rem;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 0 24px;
+}
+
+.projects > div {
+  border: 2px solid black;
+}
+
 @media (max-width: 600px) {
   header > img {
     left: 50%;
@@ -66,7 +78,7 @@ p {
   }
 
   .name {
-    top: 44%;
+    top: 325px;
     left: 50%;
     transform: translateX(-50%);
   }
