@@ -70,7 +70,7 @@ main > h1 {
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 42px;
 }
 
@@ -78,10 +78,11 @@ main > h1 {
   box-shadow: 0 0 3px #00000080;
 }
 
-.card > h1 {
+.card  h1 {
   text-align: center;
-  padding: 48px;
+  padding: 112px 12px;
   color: #FFF;
+  font-size: 2.75rem;
 }
 
 .one {
@@ -108,17 +109,17 @@ main > h1 {
   background: lightskyblue;
 }
 
-.inner-div {
+.inner-div-two {
   padding: 0 24px 64px;
 }
 
-.inner-div > div {
+.inner-div-two > div {
   display: flex;
   justify-content: space-between;
   padding: 12px 0;
 }
 
-.inner-div > div > p {
+.inner-div-two > div > p {
   font-family: "Playfair Display";
 }
 
@@ -148,5 +149,17 @@ main > h1 {
 
   .about-me > div, .about-me > h1 {
     align-self: center;
+  }
+
+  main {
+    padding: 24px;
+  }
+
+  main > h1 {
+    text-align: center;
+  }
+
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
