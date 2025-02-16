@@ -84,7 +84,7 @@ h1, h2 {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 1000px) {
   .header {
     background: linear-gradient(170deg, #06b6d4 55%, #FFF 45%);
     padding: 100px 0 100px 175px;
@@ -125,5 +125,50 @@ h1, h2 {
 
   .icons {
     display: none;
+  }
+}
+
+@media (min-width: 1001px) {
+  .header {
+    background: linear-gradient(170deg, #06b6d4 55%, #FFF 45%);
+    padding: 50px 0 100px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .img-container {
+    max-width: 525px;
+  }
+
+  .name {
+    top: 15.5rem;
+    font-size: 4.5rem;
+  }
+
+  .about-me {
+    background: #FFF;
+    box-shadow: 0 0 10px #00000080;
+    padding: 2rem 1rem 1rem;
+    margin: 0;
+    align-self: center;
+  }
+
+  .about-me h2 {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+  }
+
+  .icons {
+    text-align: right;
+  }
+
+  .icons a {
+    font-size: 1.5rem;
   }
 }
