@@ -172,3 +172,22 @@ h1, h2 {
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: 1500px) {
+  .name {
+    top: 15rem;
+    font-size: 5rem;
+  }
+
+  .about-me h2 {
+    font-size: 3.25rem;
+  }
+
+  .about-me p {
+    font-size: 1.125rem;
+  }
+  
+  .icons a {
+    font-size: 2rem;
+  }
+}
