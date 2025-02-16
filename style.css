@@ -83,3 +83,47 @@ h1, h2 {
     font-size: 3.25rem;
   }
 }
+
+@media (min-width: 700px) {
+  .header {
+    background: linear-gradient(170deg, #06b6d4 55%, #FFF 45%);
+    padding: 100px 0 100px 175px;
+  }
+
+  .portrait {
+    display: none;
+  }
+
+  .float {
+    display: block;
+    transform-origin: bottom right;
+    transform: scale(1.75);
+  }
+
+  .img-container {
+    float: left;
+    margin-right: 1rem;
+    max-width: 250px;
+  }
+  
+  .name {
+    font-size: 3.25rem;
+    top: -7.5%;
+    left: 45%;
+    width: 105%;
+  }
+
+  .about-me {
+    background: #FFF;
+    box-shadow: 0 0 10px #00000080;
+    padding: 40px 25px;
+  }
+
+  .about-me h2 {
+    font-size: 2.25rem;
+  }
+
+  .icons {
+    display: none;
+  }
+}
