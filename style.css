@@ -77,6 +77,10 @@ h2,
   margin-right: .5rem;
 }
 
+.main {
+  padding-bottom: 100px;
+}
+
 .projects-container > h2 {
   margin-bottom: 2rem;
 }
@@ -90,24 +94,25 @@ h2,
   padding: 50px 25px 75px;
 }
 
-.purple {
-  background: purple;
+.one {
+  background: mediumpurple;
 }
 
-.orange {
-  background: orange;
+.two {
+  background: peru;
 }
 
-.green {
-  background: green;
+.three,
+.six {
+  background: darkolivegreen;
 }
 
-.pink {
-  background: pink;
+.four {
+  background: palevioletred;
 }
 
-.blue {
-  background: blue;
+.five {
+  background: dodgerblue;
 }
 
 .inner-div-one > h2 {
@@ -127,11 +132,14 @@ h3 {
   margin-left: 1rem;
   font-family: "Playfair Display", sans-serif;
   font-weight: 100;
+  font-size: 1.3125rem;
 }
 
-.project-icons > i {
+.project-icons > a {
   margin-left: .75rem;
-  font-size: 1.125rem;
+  font-size: 1.3125rem;
+  text-decoration: none;
+  color: #000;
 }
 
 .inner-div-two > p {
@@ -192,8 +200,48 @@ h3 {
     display: none;
   }
 
+  .main {
+    padding-bottom: 200px;
+  }
+
   .projects-container > h2 {
     text-align: left;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.75rem;
+    row-gap: 4rem;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  .one {
+    background: darkred;
+  }
+
+  .two,
+  .five {
+    background: mediumpurple;
+  }
+
+  .three {
+    background: palevioletred;
+  }
+
+  .four {
+    background: peru;
+  }
+
+  .six {
+    background: seagreen;
+  }
+
+  h3 {
+    margin-left: 0;
   }
 }
 
@@ -239,6 +287,49 @@ h3 {
 
   .icons a {
     font-size: 1.5rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.75rem;
+    row-gap: 4rem;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  .one {
+    background: darkred;
+  }
+
+  .two {
+    background: mediumpurple;
+  }
+
+  .three {
+    background: seagreen;
+  }
+
+  .four {
+    background: palevioletred;
+  }
+
+  .five {
+    background: peru;
+  }
+
+  .six {
+    background: dodgerblue;
+  }
+
+  .inner-div-one > h2 {
+    text-align: center;
+  }
+
+  h3 {
+    margin-left: 0;
   }
 }
 
