@@ -77,6 +77,68 @@ h2,
   margin-right: .5rem;
 }
 
+.projects-container > h2 {
+  margin-bottom: 2rem;
+}
+
+.card {
+  box-shadow: 0 0 10px #00000080;
+  margin-bottom: 4rem;
+}
+
+.inner-div-one {
+  padding: 50px 25px 75px;
+}
+
+.purple {
+  background: purple;
+}
+
+.orange {
+  background: orange;
+}
+
+.green {
+  background: green;
+}
+
+.pink {
+  background: pink;
+}
+
+.blue {
+  background: blue;
+}
+
+.inner-div-one > h2 {
+  color: #FFF;
+}
+
+.inner-div-two {
+  padding: 15px 25px 75px;
+}
+
+.project-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+h3 {
+  margin-left: 1rem;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 100;
+}
+
+.project-icons > i {
+  margin-left: .75rem;
+  font-size: 1.125rem;
+}
+
+.inner-div-two > p {
+  margin-top: 1rem;
+  color: #0000009c;
+}
+
 @media (min-width: 460px) {
   .name {
     font-size: 5rem;
